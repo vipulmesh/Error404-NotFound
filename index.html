@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switcher">
+            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('hi')">हिंदी</button>
+        </div>
+        <h1 id="title">Vote for Your Favorite Team</h1>
+        <div id="voteMessage"></div>
+        
+        <div class="teams">
+            <div class="team" data-team="Team A">
+                <h3>Team A</h3>
+                <button onclick="vote('Team A')">Vote for Team A</button>
+            </div>
+            <div class="team" data-team="Team B">
+                <h3>Team B</h3>
+                <button onclick="vote('Team B')">Vote for Team B</button>
+            </div>
+            <div class="team" data-team="Team C">
+                <h3>Team C</h3>
+                <button onclick="vote('Team C')">Vote for Team C</button>
+            </div>
+            <div class="team" data-team="Team D">
+                <h3>Team D</h3>
+                <button onclick="vote('Team D')">Vote for Team D</button>
+            </div>
+            <div class="team" data-team="Team E">
+                <h3>Team E</h3>
+                <button onclick="vote('Team E')">Vote for Team E</button>
+            </div>
+        </div>
+
+        <div id="chatbox"></div>
+        <div id="gemini-chat">
+            <button onclick="startChat()">Start Chat</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
